@@ -48,7 +48,9 @@
 #include <linux/mutex.h>
 #include <linux/rculist.h>
 #include <asm/uaccess.h>
-#include <asm/cacheflush.h>
+#include <asm/cacheflush.h>//FIXME
+	flags |= MODULE_INIT_IGNORE_MODVERSIONS;
+	flags |= MODULE_INIT_IGNORE_VERMAGIC;
 #include <asm/mmu_context.h>
 #include <linux/license.h>
 #include <asm/sections.h>
